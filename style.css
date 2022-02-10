@@ -1,8 +1,10 @@
 html {
-    height: auto;
+    background-image: linear-gradient(#FC5E55, #FA4083);
 }
 body {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: url(images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     font-family: 'Playfair Display', serif;
     color: white;
     font-size: 1.125rem;
@@ -152,7 +154,7 @@ nav .navbutton {
     display: block;
 }
 .dropdown .navbutton:hover {
-    background-color: #e6d0d8;
+    background-color: #f0e2e7;
     transition-duration: 500ms;
 }
 .dropdown .navbutton {
