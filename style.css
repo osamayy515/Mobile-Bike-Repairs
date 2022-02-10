@@ -112,11 +112,13 @@ a.mybutton {
     display: inline-block;
     margin-top: 20px;
 }
-nav a.navbutton {
+nav .navbutton {
     font-family: 'Playfair Display', serif;
     margin-left: 2px;
     border: 1px solid white;
     padding: 11px 25px;
+    display: inline-block;
+    position: relative;
 }
 .testimonials {
     display: flex;
@@ -137,4 +139,26 @@ nav a.navbutton {
 .tbox p:last-of-type {
     font-size: 0.8rem;
     padding-left: 30px;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+    margin-left: -28px;
+}
+.navbutton:hover .dropdown {
+    display: block;
+}
+.dropdown .navbutton:hover {
+    background-color: #e6d0d8;
+    transition-duration: 500ms;
+}
+.dropdown .navbutton {
+    width: 150px;
+    background-color: white;
+}
+.dropdown .navbutton a {
+    color: #FA4083;
 }
